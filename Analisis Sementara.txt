@@ -1,0 +1,31 @@
+Nama : Gunawan Wibisono
+NPM  : 224308083
+Kelas: TKA-7D
+
+Analisis Sementara
+
+Analisis :
+1. Bagaimana performa agen dalam mengontrol environment CartPole?
+   CartPole-v1 merupakan salah satu environment yang sering digunakan dalam penerapan reinforcement learning. Dimana agen bertugas untuk menyeimbangkan tiang (pole) yang terpasang pada gerobak (cart) dengan cara menggerakkan gerobak ke kiri atau ke kanan. Performa dari CartPole-v1 dapat dipengaruhi dari pelatihan, arsitektur jaringan saraf, dan jumlah episode training. Dengan percobaan 300 episode training yang telah dilakukan, agen sudah mulai mampu menyeimbangkan tiang meskipun belum stabil. Skor training meningkat seiring bertambahnya episode, tetapi hasil testing masih menunjukkan agen kadang gagal. 
+
+2. Bagaimana perubahan parameter (misal: gamma, epsilon, learning rate) mempengaruhi kinerja agen?
+   Berdasarkan beberapa literasi, perubahan parameter berpengaruh besar terhadap kinerja agen. Nilai gamma menentukan apakah agen lebih fokus pada hasil jangka pendek atau jangka panjang. Parameter epsilon digunakan untuk mengatur keseimbangan antara mencoba hal baru (eksplorasi) dan menggunakan pengalaman terbaik yang sudah ada (eksploitasi). Sementara itu, learning rate berfungsi sebagai kecepatan belajar agen. Dengan pengaturan yang seimbang, agen dapat beradaptasi dan meningkatkan performanya secara bertahap.
+
+3. Apa tantangan yang muncul selama pelatihan agen RL?
+   Tantangan utama selama pelatihan adalah lamanya waktu training, karena dibutuhkan banyak episode agar agen benar-benar stabil. Selain itu, performa agen di awal juga sering tidak konsisten karena masih banyak melakukan eksplorasi. Keterbatasan perangkat keras (hardware) juga menjadi kendala karena membuat proses training lebih lama sehingga sulit mencoba banyak variasi parameter sekaligus.
+
+Diskusi:
+1. Apa perbedaan utama antara Reinforcement Learning dan metode supervised learning dalam sistem kendali?
+   Dalam supervised learning, sistem belajar dari data yang sudah diberi label, sehingga hasil yang benar sudah diketahui. Sementara itu, dalam reinforcement learning, agen tidak memiliki label melainkan belajar dengan berinteraksi di lingkungan sekitar dan menerima masukan berupa reward atau penalty. Oleh karena itu, reinforcement learning lebih tepat digunakan untuk menyelesaikan masalah yang membutuhkan pengambilan keputusan secara bertahap.
+
+2. Bagaimana strategi eksplorasi (exploration) dan eksploitasi (exploitation) dapat dioptimalkan pada agen RL?
+   Eksplorasi adalah proses ketika agen mencoba tindakan baru secara acak untuk menemukan cara yang lebih baik, sedangkan eksploitasi adalah proses ketika agen menggunakan cara yang sudah diketahui untuk mendapatkan hasil yang baik. Jika agen terlalu banyak melakukan eksplorasi, proses belajar jadi lebih lama karena terlalu sering mencoba hal yang tidak efektif. Di sisi lain, jika agen terlalu cepat beralih ke eksploitasi, agen bisa terjebak pada cara yang kurang baik karena tidak mencoba pilihan lain. Untuk mengatasi masalah ini, dapat digunakan strategi dengan agen mulai dengan tingkat eksplorasi yang tinggi, lalu secara perlahan menguranginya sehingga semakin lama agen lebih fokus pada cara yang terbaik yang sudah dipelajari.
+
+3. Potensi aplikasi lain dari RL dalam sistem kendali nyata apa saja yang dapat diimplementasikan?
+   Reinforcement learning dapat digunakan pada robotika untuk membantu navigasi, pada kendaraan otonom untuk mengambil keputusan, serta dalam industri manufaktur dan logistik untuk mengoptimalkan gerakan (AGV). 
+
+
+
+
+
+
